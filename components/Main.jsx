@@ -3,22 +3,76 @@ import React from 'react';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaHackerrank, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
+import { motion, spring } from "framer-motion"
 
 const Main = () => {
   return (
     <div id='home' className='w-full h-screen text-center'>
       <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
         <div>
+<motion.div
+initial={{
+  x:-200,
+}}
+animate={{
+  x:0
+}}
+transition={{
+ 
+  duration:1,
+  type:"spring",
+  stiffness:120
+}}
+
+>
+
+
           <p className='uppercase text-sm tracking-widest text-gray-600'>
             LET&#39;S BUILD SOMETHING TOGETHER
           </p>
           <h1 className='py-4 text-gray-700'>
             Hi, I&#39;m <span className='text-[#5651e5]'> Sashika</span>
           </h1>
+          </motion.div>
+
+          <motion.div
+initial={{
+  x:200,
+}}
+animate={{
+  x:0
+}}
+transition={{
+ 
+  duration:1,
+  type:"spring",
+  stiffness:120
+  
+}}
+
+>
           <h1 className='py-2 text-gray-700'>A Fullstack Web Developer</h1>
+          </motion.div>
+          <motion.div
+initial={{
+  y:10,
+  opacity:0
+}}
+animate={{
+  y:0,
+  opacity:1,
+}}
+transition={{
+ 
+  duration:1,
+  delay:.5
+}}
+
+>
           <p className='py-4 text-gray-600 sm:max-w-[70%] m-auto'>
           👋 Hey there, I'm Sashika Dulaj, a passionate student in the Computing Faculty at Sabaragamuwa University, Sri Lanka. 🌐 As a web developer and Python enthusiast, I thrive on creative problem-solving and interactive design. Join me on my journey of turning ideas into digital reality! 💻✨ #CodeDreamCreate
           </p>
+         
           <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
             <a
               href='https://www.linkedin.com/in/sashika-dulaj-684b8a203'
@@ -68,6 +122,7 @@ const Main = () => {
               </div>
             </Link>
           </div>
+          </motion.div>
         </div>
       </div>
     </div>

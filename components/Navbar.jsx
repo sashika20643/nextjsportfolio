@@ -60,9 +60,9 @@ const Navbar = () => {
             <Image
               src={NavLogo}
               alt='/'
-              style={{   filter: "invert(1)"}}
-              width='200'
-              height='100'
+          
+              width='90'
+              height='75'
               className='cursor-pointer'
             />
           </a>
