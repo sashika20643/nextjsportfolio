@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "tailwindcss build -o styles.css && next build",
     "start": "next start",
     "lint": "next lint"
+  
+
   },
   "dependencies": {
     "firebase": "^9.8.3",
@@ -23,6 +25,8 @@
     "postcss": "^8.4.13",
     "tailwindcss": "^3.0.24"
   }
+
+  
 
   
 }
