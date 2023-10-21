@@ -1,10 +1,15 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import propertyImg from '../public/assets/projects/property.jpg';
-import cryptoImg from '../public/assets/projects/crypto.jpg'
-import netflixImg from '../public/assets/projects/netflix.jpg'
-import twitchImg from '../public/assets/projects/twitch.jpg'
+import propertyImg from '../public/assets/projects/metait.png';
+import cryptoImg from '../public/assets/projects/encrypto.png'
+import netflixImg from '../public/assets/projects/social-lips.png'
+import twitchImg from '../public/assets/projects/moviehub.png'
+import crtozio from '../public/assets/projects/crotzio.png'
+import blog from '../public/assets/projects/blog.png'
+import youtube from '../public/assets/projects/youtube.png'
+
+
 import ProjectItem from './ProjectItem';
 
 const Projects = () => {
@@ -17,32 +22,56 @@ const Projects = () => {
         <h2 className='py-4'>What I&apos;ve Built</h2>
         <div className='grid md:grid-cols-2 gap-8'>
           <ProjectItem
-            title='Property Finder'
+            title='Metaitopticals'
             backgroundImg={propertyImg}
-            projectUrl='/property'
-            tech='React JS'
+            projectUrl='https://metaitoptical.com/'
+            tech='Laravel/payhere/JS/Bootstrap/HTML'
           />
-          <ProjectItem
-            title='Crypto App'
-            backgroundImg={cryptoImg}
-            projectUrl='/crypto'
-            tech='React JS'
+   <ProjectItem
+            title='Crotzio'
+            backgroundImg={crtozio}
+            projectUrl='https://github.com/sashika20643/crotzio.git'
+            tech='Laravel/Bootstrap'
+          />
 
-          />
-          <ProjectItem
-            title='Netflix App'
-            backgroundImg={netflixImg}
-            projectUrl='/netflix'
-            tech='React JS'
-
-          />
-          <ProjectItem
-            title='Twitch UI'
+            <ProjectItem
+            title='Movie-Hub'
             backgroundImg={twitchImg}
-            projectUrl='/twitch'
-            tech='Next JS'
+            projectUrl='https://github.com/sashika20643/Moviehub-react-'
+            tech='React JS/OMDB API'
 
           />
+                 <ProjectItem
+            title='Reporter'
+            backgroundImg={blog}
+            projectUrl='https://github.com/sashika20643/blog-app.git'
+            tech='Laravel/Bootstrap/Js/HTML'
+
+          />
+                <ProjectItem
+            title='Social Lips'
+            backgroundImg={netflixImg}
+            projectUrl='https://github.com/orgs/Social-Lips/repositories'
+            tech='Python/Flask/React/Mongo/Firestore/React Js/Node Js'
+
+          />
+          <ProjectItem
+            title='Encrypto'
+            backgroundImg={cryptoImg}
+            projectUrl='https://github.com/sashika20643/encrypto-web'
+            tech='Laravel/Bootstrap/Python/Flask'
+
+          />
+             <ProjectItem
+            title='Ymate'
+            backgroundImg={youtube}
+            projectUrl='https://github.com/sashika20643/ymate'
+            tech='Python/flask/pytube'
+
+          />
+       
+    
+        
         </div>
       </div>
     </div>

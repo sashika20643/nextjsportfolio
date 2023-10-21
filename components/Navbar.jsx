@@ -60,8 +60,9 @@ const Navbar = () => {
             <Image
               src={NavLogo}
               alt='/'
-              width='125'
-              height='50'
+              style={{   filter: "invert(1)"}}
+              width='200'
+              height='100'
               className='cursor-pointer'
             />
           </a>
@@ -186,7 +187,7 @@ const Navbar = () => {
                   </div>
                 </a>
                 <a
-                  href='https://github.com/fireclint'
+                  href='https://github.com/sashika20643'
                   target='_blank'
                   rel='noreferrer'
                 >
