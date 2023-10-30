@@ -28,7 +28,7 @@ const Contact = () => {
               </div>
               <div>
                 <h2 className='py-2'>Sashika Dulaj</h2>
-                <p>Front-End Developer</p>
+                <p>Fullstack Developer</p>
                 <p className='py-4'>
                   I am available for a Intern positions. Contact
                   me and let&apos;s talk.

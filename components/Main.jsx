@@ -74,6 +74,17 @@ transition={{
           </p>
          
           <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
+          <motion.div
+whileTap={{
+  rotate:30
+}}
+transition={{
+ 
+  duration:.2,
+
+}}
+
+>
             <a
               href='https://www.linkedin.com/in/sashika-dulaj-684b8a203'
               target='_blank'
@@ -83,6 +94,7 @@ transition={{
                 <FaLinkedinIn />
               </div>
             </a>
+            </motion.div>
             <a
               href='https://www.youtube.com/@codemonster8240'
               target='_blank'
